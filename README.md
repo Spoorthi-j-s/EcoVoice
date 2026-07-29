@@ -11,7 +11,6 @@ The other person *types*; their reply is **spoken aloud** back to the caller.
 [![FastAPI](https://img.shields.io/badge/FastAPI-0.138-009688?logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com/)
 [![ONNX Runtime](https://img.shields.io/badge/ONNX%20Runtime-CPU-005CED?logo=onnx&logoColor=white)](https://onnxruntime.ai/)
 [![NVIDIA Parakeet](https://img.shields.io/badge/ASR-Parakeet--TDT--0.6b-76B900?logo=nvidia&logoColor=white)](https://huggingface.co/nvidia)
-![License](https://img.shields.io/badge/License-MIT-yellow)
 
 </div>
 
@@ -127,8 +126,3 @@ ecovoice/
 - **TTS needs internet** (gTTS is a cloud service); swap in `pyttsx3`/Piper for fully offline speech.
 - **Real-time sync via 2s polling** — simple and robust for a demo; WebSockets would cut latency.
 - **mDNS** (`ecovoice.local`) resolves on iOS/macOS and Android 12+; an IP fallback is shown otherwise.
-
-## License
-
-MIT
-# EcoVoice
