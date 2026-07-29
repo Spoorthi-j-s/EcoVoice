@@ -1,0 +1,16 @@
+[project]
+name = "ecovoice"
+version = "0.1.0"
+description = "Assistive call communication for deaf and non-verbal users: speech-to-text (NVIDIA Parakeet ONNX on CPU) plus text-to-speech."
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "fastapi>=0.138.0",
+    "gtts>=2.5.4",
+    "huggingface-hub>=1.16.1",
+    "numpy>=2.5.0",
+    "onnx-asr>=0.11.0",
+    "onnxruntime>=1.27.0",
+    "python-multipart>=0.0.32",
+    "uvicorn>=0.49.0",
+]

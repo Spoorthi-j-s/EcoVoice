@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>EcoVoice — Receiver</title>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+<div class="wrap" data-page="receiver">
+  <a class="back" href="/">← Home</a>
+  <h1>🦻 Receiver</h1>
+  <p class="sub">Read the caller's latest words. Type a reply — it's spoken on their phone.</p>
+
+  <div class="pill" id="presence"><span class="dot"></span><span id="presenceText">…</span></div>
+
+  <div class="card" style="margin-top:16px">
+    <h2 style="margin-top:0">🦻 Live subtitle</h2>
+    <div class="subtitle" id="subtitle"><span class="waiting">Waiting for the caller to speak…</span></div>
+    <button class="btn secondary" id="clearBtn" style="display:none;margin-top:8px">✓ Read — clear</button>
+  </div>
+
+  <div class="card">
+    <input type="text" id="reply" placeholder="⌨️ Type your reply…" autocomplete="off" />
+    <button class="btn" id="sendBtn">📨 Send (speak on caller's phone)</button>
+    <div class="status" id="status"></div>
+  </div>
+
+  <button class="btn danger" id="endBtn">📞 End call</button>
+
+  <div class="overlay" id="ended">
+    <div class="card">
+      <button class="close-x" id="closeBtn" title="Close" aria-label="Close">✕</button>
+      <div class="big-emoji">📴</div>
+      <h1 id="endedText">Call ended</h1>
+      <button class="btn" id="newCallBtn" style="margin-top:14px">🔄 Start a new call</button>
+    </div>
+  </div>
+</div>
+<script src="/static/app.js"></script>
+</body>
+</html>

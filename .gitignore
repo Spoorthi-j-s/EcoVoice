@@ -1,0 +1,16 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+
+# Self-signed TLS certs (generate locally, never commit)
+certs/
+
+# Local demo database
+*.db

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>EcoVoice — Caller</title>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+<div class="wrap" data-page="caller">
+  <a class="back" href="/">← Home</a>
+  <h1>📞 Caller</h1>
+  <p class="sub">Speak your message. It's delivered to the receiver, then cleared here.</p>
+
+  <div class="pill" id="presence"><span class="dot"></span><span id="presenceText">…</span></div>
+
+  <div class="card" style="margin-top:16px">
+    <button class="btn big" id="recBtn">🎙️ Hold conversation — tap to record</button>
+    <div class="status" id="status">Tap the button, speak, then tap again to send.</div>
+  </div>
+
+  <div class="card" id="replyCard" style="display:none">
+    <h2 style="margin-top:0">🔊 Receiver's spoken reply</h2>
+    <audio id="replyAudio" controls autoplay style="width:100%"></audio>
+  </div>
+
+  <button class="btn danger" id="endBtn">📞 End call</button>
+
+  <div class="overlay" id="ended">
+    <div class="card">
+      <button class="close-x" id="closeBtn" title="Close" aria-label="Close">✕</button>
+      <div class="big-emoji">📴</div>
+      <h1 id="endedText">Call ended</h1>
+      <button class="btn" id="newCallBtn" style="margin-top:14px">🔄 Start a new call</button>
+    </div>
+  </div>
+</div>
+<script src="/static/app.js"></script>
+</body>
+</html>

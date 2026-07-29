@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>EcoVoice — Demo Call</title>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+<div class="wrap" data-page="index">
+  <h1>📞 EcoVoice Demo Call</h1>
+  <p class="sub">Assistive call link for deaf &amp; non-verbal users. Open one role on
+    each phone — both connect to the same call.</p>
+
+  <div class="card">
+    <a class="btn big" href="/caller">📞 Open as Caller</a>
+    <p class="sub" style="margin:10px 2px 0">The hearing person. Speak normally; your
+      words appear as text on the receiver's phone.</p>
+  </div>
+
+  <div class="card">
+    <a class="btn big" href="/receiver">🦻 Open as Receiver</a>
+    <p class="sub" style="margin:10px 2px 0">The deaf / non-verbal person. Read the live
+      subtitle and type back — your reply is spoken on the caller's phone.</p>
+  </div>
+
+  <div class="card">
+    <a class="btn secondary" href="/history">🗄️ View stored history (database)</a>
+    <button class="btn secondary" id="resetBtn" style="margin-top:10px">🧹 Reset live call (keeps database)</button>
+    <div class="status" id="status"></div>
+  </div>
+</div>
+<script src="/static/app.js"></script>
+</body>
+</html>
